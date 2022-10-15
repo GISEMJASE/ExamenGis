@@ -8,16 +8,22 @@
 import UIKit
 
 class SongsTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var lblNumberSong: UILabel!
+    @IBOutlet weak var lblTitleSong: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
+    
+    func setCell(withNoSong noSong: String, andNameSong strSong: String){
+        self.lblNumberSong.text = noSong
+        self.lblTitleSong.text = strSong
+    }
+
     
 }

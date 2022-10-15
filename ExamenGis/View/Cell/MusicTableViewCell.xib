@@ -50,6 +50,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="M3s-06-UDO" secondAttribute="trailing" constant="8" id="Y0s-87-woQ"/>
                     <constraint firstItem="M3s-06-UDO" firstAttribute="top" secondItem="hMU-hw-aQe" secondAttribute="bottom" constant="8" id="aKX-H9-9iy"/>
                     <constraint firstItem="WY8-9I-kpf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="cEm-Lh-vpV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="M3s-06-UDO" secondAttribute="bottom" constant="23" id="cVZ-xC-NEj"/>
                     <constraint firstItem="3Xc-PT-lt7" firstAttribute="leading" secondItem="WY8-9I-kpf" secondAttribute="trailing" constant="8" id="e2M-uY-bnc"/>
                     <constraint firstItem="hMU-hw-aQe" firstAttribute="top" secondItem="3Xc-PT-lt7" secondAttribute="bottom" constant="8" id="ilJ-I3-1nx"/>
                     <constraint firstItem="3Xc-PT-lt7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="n7C-gu-wXT"/>
@@ -58,6 +59,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgAlbum" destination="WY8-9I-kpf" id="67a-aF-zQp"/>
+                <outlet property="lblAlbum" destination="hMU-hw-aQe" id="hS6-jd-6bw"/>
+                <outlet property="lblArtist" destination="3Xc-PT-lt7" id="Qxx-9j-J4G"/>
+                <outlet property="lblYear" destination="M3s-06-UDO" id="Gkg-Pi-tP6"/>
+            </connections>
             <point key="canvasLocation" x="146" y="137"/>
         </tableViewCell>
     </objects>

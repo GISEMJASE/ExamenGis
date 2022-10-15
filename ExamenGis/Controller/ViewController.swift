@@ -13,7 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblAlbum: UILabel!
     @IBOutlet weak var lblYear: UILabel!
     @IBOutlet weak var tblSongs: UITableView!
-    @IBOutlet weak var tblAlbums: UITableView!
+    @IBOutlet weak var tblAlbums: UITableView!{
+        didSet {
+            self.tblAlbums.delegate = self
+            self.tblAlbums.dataSource = self
+        }
+    }
     
     let artist : String = "Nightwish"
     let album : String = "Once"
@@ -23,11 +28,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.tblAlbums.register(UINib(nibName: "MusicTableViewCell", bundle: .main), forCellReuseIdentifier: "MusicTableViewCell")
-        self.tblSongs.delegate = self
-        self.tblSongs.dataSource = self
-        self.tblAlbums.delegate = self
-        self.tblAlbums.dataSource = self
-        
+    
+    
     }
 
 

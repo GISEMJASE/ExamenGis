@@ -31,9 +31,16 @@ class ViewController: UIViewController {
     let album : String = "Once"
     let year : String = "2001"
     let songs: [String] = ["Cancion 1","Cancion 2","Cancion 3","Cancion 4", "Cancion 5", "Cancion 6", "Cancion 7", "Cancion 8","Cancion 9","Cancion 10"]
+    
+    let musicData: DataMusic = DataMusic()
+    var arralbums:[Album] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(musicData.setAlbums())
+        arralbums = musicData.setAlbums()
+     
     }
     
     
@@ -41,7 +48,7 @@ class ViewController: UIViewController {
 extension ViewController:UITableViewDelegate{}
 extension ViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return songs.count
+        return arralbums.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

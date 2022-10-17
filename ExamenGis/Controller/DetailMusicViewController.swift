@@ -19,9 +19,14 @@ class DetailMusicViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("\n\n\n\n  Album en detalle --->\(album?.artist) ")
         self.setupView(withAlbum: album ?? Album(art: "ART", nam: "NAME", yr: "YYYY", sg: []))
        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        album = nil
     }
     
     func setupView(withAlbum album: Album){
@@ -30,5 +35,6 @@ class DetailMusicViewController: UIViewController {
         self.lblYear.text = album.year
     }
                 
+ 
 
 }

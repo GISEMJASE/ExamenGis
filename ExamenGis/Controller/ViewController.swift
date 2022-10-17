@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     let musicData: DataMusic = DataMusic()
     var arrAlbums: [Album] = []
-    let fullalbum: DetailMusicViewController = DetailMusicViewController()
+   
     var songs: [String] = []
     
 
@@ -83,7 +83,7 @@ extension ViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if tableView.tag == 2{
-            print("\n\n\n\n  ARR --->\(arrAlbums[indexPath.row].nameAlbum) ")
+            let fullalbum: DetailMusicViewController = DetailMusicViewController()
             let albumToSend = arrAlbums[indexPath.row]
             fullalbum.album = albumToSend
             self.navigationController?.pushViewController(fullalbum, animated: true)

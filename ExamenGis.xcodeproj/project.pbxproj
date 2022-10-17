@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A204C5DD28FDFAA20035B46B /* DetailMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A204C5DB28FDFAA20035B46B /* DetailMusicViewController.swift */; };
+		A204C5DE28FDFAA20035B46B /* DetailMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A204C5DC28FDFAA20035B46B /* DetailMusicViewController.xib */; };
 		A2FE7C5328FB2372009A902C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE7C5228FB2372009A902C /* AppDelegate.swift */; };
 		A2FE7C5528FB2372009A902C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE7C5428FB2372009A902C /* SceneDelegate.swift */; };
 		A2FE7C5728FB2372009A902C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE7C5628FB2372009A902C /* ViewController.swift */; };
@@ -15,14 +17,14 @@
 		A2FE7C5F28FB2373009A902C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FE7C5D28FB2373009A902C /* LaunchScreen.storyboard */; };
 		A2FE7C6D28FB25FC009A902C /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE7C6B28FB25FC009A902C /* MusicTableViewCell.swift */; };
 		A2FE7C6E28FB25FC009A902C /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FE7C6C28FB25FC009A902C /* MusicTableViewCell.xib */; };
-		A2FE7C7128FB2B40009A902C /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE7C6F28FB2B40009A902C /* MusicViewController.swift */; };
-		A2FE7C7228FB2B40009A902C /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FE7C7028FB2B40009A902C /* MusicViewController.xib */; };
 		A2FE7C7528FB30AD009A902C /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE7C7428FB30AD009A902C /* Datos.swift */; };
 		A2FE7C7828FB461D009A902C /* SongsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE7C7628FB461D009A902C /* SongsTableViewCell.swift */; };
 		A2FE7C7928FB461D009A902C /* SongsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FE7C7728FB461D009A902C /* SongsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A204C5DB28FDFAA20035B46B /* DetailMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMusicViewController.swift; sourceTree = "<group>"; };
+		A204C5DC28FDFAA20035B46B /* DetailMusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMusicViewController.xib; sourceTree = "<group>"; };
 		A2FE7C4F28FB2372009A902C /* ExamenGis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenGis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FE7C5228FB2372009A902C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2FE7C5428FB2372009A902C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,8 +35,6 @@
 		A2FE7C6028FB2373009A902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2FE7C6B28FB25FC009A902C /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		A2FE7C6C28FB25FC009A902C /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
-		A2FE7C6F28FB2B40009A902C /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
-		A2FE7C7028FB2B40009A902C /* MusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
 		A2FE7C7428FB30AD009A902C /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 		A2FE7C7628FB461D009A902C /* SongsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsTableViewCell.swift; sourceTree = "<group>"; };
 		A2FE7C7728FB461D009A902C /* SongsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongsTableViewCell.xib; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				A2FE7C5628FB2372009A902C /* ViewController.swift */,
-				A2FE7C6F28FB2B40009A902C /* MusicViewController.swift */,
-				A2FE7C7028FB2B40009A902C /* MusicViewController.xib */,
+				A204C5DB28FDFAA20035B46B /* DetailMusicViewController.swift */,
+				A204C5DC28FDFAA20035B46B /* DetailMusicViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,8 +188,8 @@
 			files = (
 				A2FE7C5F28FB2373009A902C /* LaunchScreen.storyboard in Resources */,
 				A2FE7C5C28FB2373009A902C /* Assets.xcassets in Resources */,
-				A2FE7C7228FB2B40009A902C /* MusicViewController.xib in Resources */,
 				A2FE7C5A28FB2372009A902C /* Main.storyboard in Resources */,
+				A204C5DE28FDFAA20035B46B /* DetailMusicViewController.xib in Resources */,
 				A2FE7C7928FB461D009A902C /* SongsTableViewCell.xib in Resources */,
 				A2FE7C6E28FB25FC009A902C /* MusicTableViewCell.xib in Resources */,
 			);
@@ -203,11 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2FE7C5728FB2372009A902C /* ViewController.swift in Sources */,
-				A2FE7C7128FB2B40009A902C /* MusicViewController.swift in Sources */,
 				A2FE7C7828FB461D009A902C /* SongsTableViewCell.swift in Sources */,
 				A2FE7C5328FB2372009A902C /* AppDelegate.swift in Sources */,
 				A2FE7C5528FB2372009A902C /* SceneDelegate.swift in Sources */,
 				A2FE7C6D28FB25FC009A902C /* MusicTableViewCell.swift in Sources */,
+				A204C5DD28FDFAA20035B46B /* DetailMusicViewController.swift in Sources */,
 				A2FE7C7528FB30AD009A902C /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

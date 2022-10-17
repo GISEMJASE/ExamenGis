@@ -23,5 +23,12 @@ class MusicTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
+    func setCell(withAlbum alb: Album){
+        self.lblAlbum.text = alb.nameAlbum
+        self.lblArtist.text = alb.artist
+        self.lblYear.text = alb.year
+    }
+    
     
 }

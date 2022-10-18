@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var imageAlbum: UIImageView!
+    //MARK: - O U T L E T S
+    @IBOutlet weak var imageAlbum: UIImageView!{
+        didSet{ self.imageAlbum.layer.cornerRadius = 60 }
+    }
     @IBOutlet weak var lblArtist: UILabel!
     @IBOutlet weak var lblAlbum: UILabel!
     @IBOutlet weak var lblYear: UILabel!
-    
-    
     @IBOutlet weak var tblSongs: UITableView!{
         didSet{
             self.tblSongs.delegate = self
@@ -34,8 +35,8 @@ class ViewController: UIViewController {
     
     let musicData: DataMusic = DataMusic()
     var arrAlbums: [Album] = []
-   
     var songs: [String] = []
+    
     
 
     override func viewDidLoad() {
@@ -44,20 +45,29 @@ class ViewController: UIViewController {
         self.setInitialAlbum()
         
     }
-    
+    //MARK: - A L B U M      I N I C I A L
     func setInitialAlbum(){
         lblArtist.text = self.arrAlbums[0].artist ?? ""
         lblYear.text = self.arrAlbums[0].year ?? ""
         lblAlbum.text = self.arrAlbums[0].nameAlbum ?? ""
         songs = self.arrAlbums[0].arrSong ?? []
+        imageAlbum.image = UIImage(named: arrAlbums[0].artist ?? "")
     }
     
     
 }
-extension ViewController:UITableViewDelegate{}
 
-extension ViewController:UITableViewDataSource {
+//MARK: - T A B L A S
+extension ViewController:UITableViewDelegate & UITableViewDataSource{
+// tag 1 = Canciones, tag 2 = albums
     
+    internal func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    if tableView.tag == 2{
+    return "*** M Á S  A L B U M S ***"
+    }else {
+        return "C A N C I O N E S"
+    }}
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if tableView.tag == 2{

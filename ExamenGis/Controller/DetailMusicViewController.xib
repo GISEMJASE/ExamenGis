@@ -24,9 +24,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k6y-4U-CX3">
-                    <rect key="frame" x="117" y="62" width="180" height="178.5"/>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luk-Dz-Ald">
                     <rect key="frame" x="20" y="274" width="85.5" height="31.5"/>
                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="26"/>
@@ -49,15 +46,19 @@
                     <rect key="frame" x="20" y="383.5" width="374" height="470.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k6y-4U-CX3">
+                    <rect key="frame" x="117" y="62" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="Cg9-Hl-AKJ"/>
+                        <constraint firstAttribute="width" constant="180" id="v93-JS-xbO"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k6y-4U-CX3" secondAttribute="trailing" constant="117" id="5ng-lS-JHY"/>
                 <constraint firstItem="EAd-HB-IPr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AA0-Lz-06G"/>
-                <constraint firstItem="k6y-4U-CX3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="117" id="Bc9-wz-I5V"/>
                 <constraint firstItem="WJM-Na-XQZ" firstAttribute="top" secondItem="luk-Dz-Ald" secondAttribute="bottom" constant="12" id="EKJ-fH-9BE"/>
-                <constraint firstItem="EAd-HB-IPr" firstAttribute="top" secondItem="k6y-4U-CX3" secondAttribute="bottom" constant="143" id="IWO-VC-rJV"/>
                 <constraint firstItem="67q-Ly-t5P" firstAttribute="top" secondItem="WJM-Na-XQZ" secondAttribute="bottom" constant="12" id="LRh-AR-BN7"/>
                 <constraint firstItem="luk-Dz-Ald" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="230" id="QGk-WB-kXg"/>
                 <constraint firstItem="67q-Ly-t5P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="RHL-B0-5x6"/>
@@ -65,7 +66,8 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EAd-HB-IPr" secondAttribute="trailing" constant="20" id="WOz-6F-rWq"/>
                 <constraint firstItem="luk-Dz-Ald" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZbG-T0-Hyj"/>
                 <constraint firstItem="EAd-HB-IPr" firstAttribute="top" secondItem="67q-Ly-t5P" secondAttribute="bottom" constant="12" id="a0O-dH-ZLd"/>
-                <constraint firstItem="k6y-4U-CX3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="c9h-nj-jXQ"/>
+                <constraint firstItem="k6y-4U-CX3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="acm-u4-8sg"/>
+                <constraint firstItem="k6y-4U-CX3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="gYU-SH-Arn"/>
                 <constraint firstItem="WJM-Na-XQZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mUg-Xl-eB9"/>
             </constraints>
             <point key="canvasLocation" x="139" y="153"/>

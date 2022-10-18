@@ -8,7 +8,9 @@
 import UIKit
 
 class MusicTableViewCell: UITableViewCell {
-    @IBOutlet weak var imgAlbum: UIImageView!
+    @IBOutlet weak var imgAlbum: UIImageView!{
+        didSet{ self.imgAlbum.layer.cornerRadius = 30 }
+    }
     @IBOutlet weak var lblArtist: UILabel!
     @IBOutlet weak var lblAlbum: UILabel!
     @IBOutlet weak var lblYear: UILabel!
@@ -28,7 +30,10 @@ class MusicTableViewCell: UITableViewCell {
         self.lblAlbum.text = alb.nameAlbum
         self.lblArtist.text = alb.artist
         self.lblYear.text = alb.year
+        self.imgAlbum.image = UIImage(named: alb.artist ?? "")
+        
     }
     
     
 }
+
